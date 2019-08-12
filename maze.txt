@@ -1,11 +1,19 @@
+#check if it can go East and if it can't go to step 3 
+#if it can go East, go East and go to step 1
 0 *E** -> X 3
 0 *x** -> E 1
 
+#check if it can go South and if it can't go to step 0
+#if it can go South, go South and go to step 2
 1 ***S -> x 0
 1 ***x -> S 2
 
+#check if it can go West and if it can't go to step 1
+#if it can go West, go West and go to step 3
 2 **W* -> x 1
 2 **x* -> W 3
 
+#check if it can go North and if it can't go to step 2
+#if it can go North, go North and go to step 0
 3 N*** -> x 2
 3 x*** -> N 0
